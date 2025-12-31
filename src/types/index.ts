@@ -34,6 +34,7 @@ export interface PersonalInfo {
   currentJob: string
   location: string
   avatar: string
+  avatarFrame?: string
 }
 
 // 统计数据接口

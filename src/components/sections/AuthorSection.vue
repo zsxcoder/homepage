@@ -16,6 +16,11 @@
       <!-- 头像 -->
       <div class="author-img">
         <img 
+          class="no-lightbox avatar-frame" 
+          :src="personalInfo.avatarFrame" 
+          alt="头像框"
+        >
+        <img 
           class="no-lightbox" 
           :src="personalInfo.avatar" 
           :alt="personalInfo.name"
@@ -149,6 +154,16 @@ const { personalInfo, leftTags, rightTags } = usePersonalData()
   transition: 0.3s;
 }
 
+.avatar-frame {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  transform: scale(1.3);
+  width: 180px;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .author-img img {
   border-radius: 50%;
   overflow: hidden;
@@ -224,12 +239,17 @@ const { personalInfo, leftTags, rightTags } = usePersonalData()
     width: 120px;
     height: 120px;
   }
-  
+
   .author-img img {
     width: 120px;
     height: 120px;
   }
-  
+
+  .avatar-frame {
+    width: 120px;
+    top: -3px;
+  }
+
   .author-img:before {
     bottom: -5px;
     right: -5px;

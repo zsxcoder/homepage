@@ -27,7 +27,8 @@ export function usePersonalData() {
     major: '自动化技术与应用',
     currentJob: '学生👨‍🎓',
     location: '中国，苏州市',
-    avatar: 'https://home.zsxcoder.top/api/avatar.png'
+    avatar: 'https://home.zsxcoder.top/api/avatar.png',
+    avatarFrame: '/kuang.avif'
   })
 
   const authorTags = ref<AuthorTag[]>([
