@@ -73,4 +73,18 @@
   --anzhiyu-card-bg: #161b22;
   --anzhiyu-maskbg: rgba(0, 0, 0, 0.6);
   --anzhiyu-card-border: #30363d;
+  --anzhiyu-white-op: rgba(255, 255, 255, 0.2);
+}
+
+/* 通用变量补充 */
+:root {
+  --anzhiyu-none: transparent;
+  --anzhiyu-lighttext: #f8f9fa;
+  --anzhiyu-card-bg-op: rgba(66, 89, 239, 0.1);
+  --anzhiyu-card-bg-none: transparent;
+}
+
+[data-theme="dark"] {
+  --anzhiyu-card-bg-op: rgba(66, 89, 239, 0.2);
+  --anzhiyu-lighttext: #ffffff;
 }

@@ -1,17 +1,17 @@
 <template>
   <div class="author-content-item personalities">
     <div class="author-content-item-tips">性格</div>
-    <span class="author-content-item-title">防守者</span>
-    <div class="title2" style="color:#ac899c">ISFJ-A</div>
+    <span class="author-content-item-title">提倡者</span>
+    <div class="title2" style="color:#ac899c">INFJ-T</div>
     <div class="post-tips">
       在 <a href="https://www.16personalities.com/" target="_blank" rel="noopener nofollow">16personalities</a> 
       了解更多关于 <a target="_blank" rel="noopener external nofollow" 
-      href="https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC">防守者</a>
+      href="https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC">提倡者</a>
     </div>
     <div class="image">
       <img 
         class="no-lightbox"
-        src="https://www.16personalities.com/static/images/personality-types/avatars/email/large/ISFJ_male.png?v=1"
+        src="https://www.16personalities.com/static/images/personality-types/avatars/email/large/INFJ_male.png?v=1"
         onerror="this.onerror=null,this.src='https://bu.dusays.com/2023/03/03/6401a79030db5.png'"
         data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg"
         alt="人格"

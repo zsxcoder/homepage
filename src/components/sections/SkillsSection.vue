@@ -81,7 +81,7 @@
           <img 
             class="author-content-img no-lightbox" 
             alt="生涯" 
-            src="https://img20.360buyimg.com/openfeedback/jfs/t1/309458/35/18671/4170/687f1093Fd2b00cf5/dcefafcc0ab2dc3d.webp"
+            src="/sy.png"
           >
         </div>
       </div>

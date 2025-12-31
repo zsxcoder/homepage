@@ -1,14 +1,14 @@
 <template>
   <div class="author-content-item game-yuanshen"
-       style="background:url(https://img02.anheyu.com/adminuploads/1/2022/12/19/63a079ca63c8a.webp) top/cover no-repeat">
+       style="background:url(/jihuang.jpg) top/cover no-repeat">
     <div class="card-content">
       <div class="author-content-item-tips">爱好游戏</div>
-      <span class="author-content-item-title">原神</span>
+      <span class="author-content-item-title">饥荒</span>
       <div class="content-bottom">
         <div class="icon-group">
           <div class="loading-bar" role="presentation" aria-hidden="true"></div>
         </div>
-        <div class="tips game-yuanshen-uid">UID: 148905547</div>
+        <div class="tips game-yuanshen-uid">name: Krylin</div>
       </div>
     </div>
   </div>

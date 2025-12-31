@@ -19,26 +19,26 @@ import type {
  */
 export function usePersonalData() {
   const personalInfo = reactive<PersonalInfo>({
-    name: '星辰',
-    title: '全栈开发工程师、毕业生、独立开发者、博主',
-    description: '生活明朗，万物可爱✨',
-    birthYear: 2002,
-    school: '山东协和学院',
-    major: '计算机科学与技术',
-    currentJob: '毕业生👨‍🎓',
-    location: '中国，衡水市',
-    avatar: 'https://q1.qlogo.cn/g?b=qq&nk=1628773490&s=640'
+    name: '钟神秀',
+    title: '大学生、资源分享者、博主',
+    description: '造化钟神秀，阴阳割昏晓~',
+    birthYear: 2005,
+    school: '南京工业职业技术大学',
+    major: '自动化技术与应用',
+    currentJob: '学生👨‍🎓',
+    location: '中国，苏州市',
+    avatar: 'https://home.zsxcoder.top/api/avatar.png'
   })
 
   const authorTags = ref<AuthorTag[]>([
-    { id: '1', text: '数码科技爱好者', emoji: '🤖️' },
-    { id: '2', text: '分享与热心帮助', emoji: '🔍' },
-    { id: '3', text: '智能家居小能手', emoji: '🏠' },
-    { id: '4', text: '设计开发一条龙', emoji: '🔨' },
-    { id: '5', text: '专修交互与设计', emoji: '🤝' },
+    { id: '1', text: '资源分享爱好者', emoji: '🤖️' },
+    { id: '2', text: '分享好用的工具', emoji: '🔍' },
+    { id: '3', text: '摆烂普通的咸鱼', emoji: '🏠' },
+    { id: '4', text: '前端小白，努力学习', emoji: '🔨' },
+    { id: '5', text: '安卓 用户', emoji: '🤝' },
     { id: '6', text: '脚踏实地行动派', emoji: '🏃' },
     { id: '7', text: '团队小组发动机', emoji: '🧱' },
-    { id: '8', text: '壮汉人狠话不多', emoji: '💢' }
+    { id: '8', text: 'Windows 11用户', emoji: '💢' }
   ])
 
   const leftTags = ref(authorTags.value.slice(0, 4))
@@ -58,11 +58,11 @@ export function usePersonalData() {
 export function useSkillsData() {
   const skillIcons = ref<SkillIcon[]>([
     {
-      id: 'java',
-      title: 'Java',
-      image: 'https://img02.anheyu.com/adminuploads/1/2022/09/25/633005bf0fd1e.jpg',
-      background: '#fff',
-      category: 'backend'
+      id: 'Astro',
+      title: 'Astro',
+      image: 'https://favicon.im/astro.build?larger=true',
+      background: '#000',
+      category: 'frontend'
     },
     {
       id: 'docker',
@@ -72,11 +72,11 @@ export function useSkillsData() {
       category: 'devops'
     },
     {
-      id: 'photoshop',
-      title: 'Photoshop',
-      image: 'https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647e1f10.png',
-      background: '#4082c3',
-      category: 'design'
+      id: 'nuxt',
+      title: 'Nuxt',
+      image: 'https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/icon/SkillIconsNuxtjsLight.5moa7dnnr3.svg',
+      background: '#fff',
+      category: 'frontend'
     },
     {
       id: 'node',
@@ -163,11 +163,11 @@ export function useSkillsData() {
       category: 'tools'
     },
     {
-      id: 'apifox',
-      title: 'Apifox',
-      image: 'https://img02.anheyu.com/adminuploads/1/2022/09/25/633007087a4dc.webp',
-      background: '#e65164',
-      category: 'tools'
+      id: 'typescript',
+      title: 'Typescript',
+      image: 'https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/icon/DeviconTypescript.6f15p6gbm4.svg',
+      background: '#00B1D0',
+      category: 'frontend'
     }
   ])
 
@@ -187,18 +187,18 @@ export function useCareersData() {
   const careers = ref<CareerItem[]>([
     {
       id: '1',
-      name: 'EDU，计算机应用技术专业',
-      period: '2020-2023',
-      description: '山东协和学院',
+      name: 'ATA，自动化技术与应用专业',
+      period: '2023-2027',
+      description: '南京工业职业技术大学',
       color: '#357ef5'
     },
-    {
-      id: '2',
-      name: 'EDU，计算机科学与技术专业',
-      period: '2023-2025',
-      description: '山东协和学院',
-      color: '#357ef5'
-    }
+    // {
+    //   id: '2',
+    //   name: 'EDU，计算机科学与技术专业',
+    //   period: '2023-2025',
+    //   description: '山东协和学院',
+    //   color: '#357ef5'
+    // }
   ])
 
   return {
@@ -245,9 +245,9 @@ export function useAnimeData() {
   const animeList = ref<AnimeItem[]>([
     {
       id: '1',
-      title: '约定的梦幻岛',
-      cover: 'https://pixpro.coul.top/i/2025/04/17/817598.webp',
-      url: 'https://www.bilibili.com/bangumi/media/md5267750/'
+      title: '诡秘之主',
+      cover: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2922892102.webp',
+      url: 'https://movie.douban.com/subject/35560080/'
     },
     {
       id: '2',
@@ -285,42 +285,42 @@ export function useAnimeData() {
  */
 export function useMenuData() {
   const menuItems = ref<MenuItem[]>([
-    {
-      id: 'about',
-      title: '关于',
-      children: [
-        {
-          id: 'about-me',
-          title: '关于本人',
-          url: '#',
-          icon: 'anzhiyu-icon-paper-plane'
-        },
-        {
-          id: 'projects',
-          title: '个人项目',
-          url: '#',
-          icon: 'anzhiyu-icon-lightbulb'
-        }
-      ]
-    },
-    {
-      id: 'contact',
-      title: '联系',
-      children: [
-        {
-          id: 'email',
-          title: '邮箱联系',
-          url: '#',
-          icon: 'anzhiyu-icon-envelope'
-        },
-        {
-          id: 'qq',
-          title: 'QQ交流',
-          url: '#',
-          icon: 'anzhiyu-icon-qq'
-        }
-      ]
-    }
+    // {
+    //   id: 'about',
+    //   title: '关于',
+    //   children: [
+    //     {
+    //       id: 'about-me',
+    //       title: '关于本人',
+    //       url: '#',
+    //       icon: 'anzhiyu-icon-paper-plane'
+    //     },
+    //     {
+    //       id: 'projects',
+    //       title: '个人项目',
+    //       url: '#',
+    //       icon: 'anzhiyu-icon-lightbulb'
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 'contact',
+    //   title: '联系',
+    //   children: [
+    //     {
+    //       id: 'email',
+    //       title: '邮箱联系',
+    //       url: '#',
+    //       icon: 'anzhiyu-icon-envelope'
+    //     },
+    //     {
+    //       id: 'qq',
+    //       title: 'QQ交流',
+    //       url: '#',
+    //       icon: 'anzhiyu-icon-qq'
+    //     }
+    //   ]
+    // }
   ])
 
   return {

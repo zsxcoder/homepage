@@ -37,7 +37,7 @@
         <div class="post-tips">
           统计信息来自 
           <a 
-            href="https://invite.51.la/1NzKqTeb?target=V6" 
+            href="https://umami.mcyzsx.top/share/kGj3I6rbV2naMhZH" 
             target="_blank"
             rel="noopener nofollow"
           >Umami网站统计</a>
@@ -90,10 +90,44 @@ const yesterdayViewsRef = ref<HTMLElement>()
 const monthViewsRef = ref<HTMLElement>()
 const totalViewsRef = ref<HTMLElement>()
 
-onMounted(() => {
+// 统计数据状态
+const statistics = ref({
+  today_uv: 0,
+  today_pv: 0,
+  online_users: 0,
+  yesterday_uv: 0,
+  yesterday_pv: 0,
+  last_month_pv: 0,
+  total_uv: 0,
+  total_pv: 0
+})
+
+// 从 API 获取统计数据
+const fetchStatistics = async () => {
+  try {
+    const response = await fetch('https://umami-api.051531.xyz/')
+    const data = await response.json()
+    statistics.value = data
+  } catch (error) {
+    console.error('获取统计数据失败:', error)
+  }
+}
+
+onMounted(async () => {
+  // 先获取统计数据
+  await fetchStatistics()
+
+  // 更新 DOM 元素的 data-count 属性
+  if (todayVisitorsRef.value) todayVisitorsRef.value.dataset.count = String(statistics.value.today_uv)
+  if (todayViewsRef.value) todayViewsRef.value.dataset.count = String(statistics.value.today_pv)
+  if (yesterdayVisitorsRef.value) yesterdayVisitorsRef.value.dataset.count = String(statistics.value.yesterday_uv)
+  if (yesterdayViewsRef.value) yesterdayViewsRef.value.dataset.count = String(statistics.value.yesterday_pv)
+  if (monthViewsRef.value) monthViewsRef.value.dataset.count = String(statistics.value.last_month_pv)
+  if (totalViewsRef.value) totalViewsRef.value.dataset.count = String(statistics.value.total_pv)
+
   // 启动数字计数动画
   const cleanup = observeCounters('#statistic span[data-count]')
-  
+
   // 清理函数在组件卸载时执行
   return cleanup
 })
@@ -219,7 +253,7 @@ onMounted(() => {
 }
 
 .author-content-item.map {
-  background-image: url(https://blog.strarry.top/static/map-light.png);
+  background-image: url(https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp);
   min-height: 160px;
   max-height: 400px;
   position: relative;

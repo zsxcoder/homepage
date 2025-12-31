@@ -1,15 +1,15 @@
 <template>
   <div class="author-content-item like-music"
-       style="background:url(https://blog.strarry.top/static/music.jpg) top/cover no-repeat">
+       style="background:url(https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/61f1b9b3a1d2e284a22863d2a8adae1e.2h8s8mvbvb.webp) top/cover no-repeat">
     <div class="card-content">
       <div class="author-content-item-tips">音乐偏好</div>
-      <span class="author-content-item-title">周杰伦、孙燕姿、华语流行</span>
+      <span class="author-content-item-title">国风、古风、二创</span>
       <div class="content-bottom">
-        <div class="tips">跟 星辰 一起欣赏更多音乐</div>
+        <div class="tips">跟 钟神秀 一起欣赏更多音乐</div>
       </div>
       <div class="banner-button-group">
-        <a class="banner-button" onclick="pjax.loadUrl('/music')">
-          <i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i> 
+        <a class="banner-button" href="https://music.163.com/#/playlist?id=13681647281" target="_blank">
+          <i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i>
           <span class="banner-button-text">更多推荐</span>
         </a>
       </div>

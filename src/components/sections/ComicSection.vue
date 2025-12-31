@@ -41,10 +41,10 @@ interface AnimeItem {
 const animeList = ref<AnimeItem[]>([
   {
     id: '1',
-    title: '约定的梦幻岛',
-    cover: 'https://pixpro.coul.top/i/2025/04/17/817598.webp',
-    lazyCover: 'https://img02.anheyu.com/adminuploads/1/2022/12/13/63988658aa1b1.webp',
-    url: 'https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1'
+    title: '诡秘之主',
+    cover: 'https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/cover/anime-gmzz.webp',
+    lazyCover: 'https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/cover/anime-gmzz.webp',
+    url: 'https://movie.douban.com/subject/35560080/'
   },
   {
     id: '2',
@@ -55,10 +55,10 @@ const animeList = ref<AnimeItem[]>([
   },
   {
     id: '3',
-    title: '紫罗兰永恒花园',
-    cover: 'https://pixpro.coul.top/i/2025/04/17/868605.webp',
-    lazyCover: 'https://img02.anheyu.com/adminuploads/1/2022/12/13/639886315d658.webp',
-    url: 'https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1'
+    title: '一拳超人 第一季',
+    cover: 'https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/cover/anime-yqcr.webp',
+    lazyCover: 'https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/cover/anime-yqcr.webp',
+    url: 'https://movie.douban.com/subject/26339248/'
   },
   {
     id: '4',

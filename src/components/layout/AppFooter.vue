@@ -4,39 +4,77 @@
       <!-- 主要页脚内容 -->
       <div id="anzhiyu-footer">
         <div class="footer-group">
-          <div class="footer-title">技术</div>
+          <div class="footer-title">导航页面</div>
           <div class="footer-links">
-            <a class="footer-item" title="前端开发" href="#" @click.prevent>前端开发</a>
-            <a class="footer-item" title="后端开发" href="#" @click.prevent>后端开发</a>
-            <a class="footer-item" title="设计开发" href="#" @click.prevent>设计开发</a>
+            <a class="footer-item" title="博客" href="https://blog.zsxcoder.top" target="_blank">博客</a>
+            <a class="footer-item" title="主页" href="https://home.zsxcoder.top" target="_blank">主页</a>
+            <a class="footer-item" title="导航" href="https://nav.mcyzsx.top" target="_blank">导航</a>
           </div>
         </div>
         
         <div class="footer-group">
-          <div class="footer-title">导航</div>
+          <div class="footer-title">联系我</div>
           <div class="footer-links">
-            <a class="footer-item" title="关于我" href="#" @click.prevent>关于我</a>
-            <a class="footer-item" title="联系方式" href="#" @click.prevent>联系方式</a>
-            <a class="footer-item" title="个人作品" href="#" @click.prevent>个人作品</a>
+            <a class="footer-item" title="Github" href="https://github.com/zsxcoder" target="_blank">
+              <span class="iconify" data-icon="mdi:github" style="margin-right: 4px;"></span>
+              Github
+            </a>
+            <a class="footer-item" title="QQ" href="https://qm.qq.com/q/eLZhXoSonY" target="_blank">
+              <span class="iconify" data-icon="ri:qq-fill" style="margin-right: 4px;"></span>
+              QQ
+            </a>
+            <a class="footer-item" title="Mail" href="mailto:3149261770@qq.com" target="_blank">
+              <span class="iconify" data-icon="material-symbols:mail" style="margin-right: 4px;"></span>
+              电子邮件
+            </a>
+        <a class="footer-item" title="Telegram" href="https://t.me/KemiaoJun" target="_blank">
+              <span class="iconify" data-icon="mdi:telegram" style="margin-right: 4px;"></span>
+              Telegram
+            </a>
+        <a class="footer-item" title="Mastodon" href="https://mastodon.social/@zsxcoder" target="_blank">
+              <span class="iconify" data-icon="mdi:mastodon" style="margin-right: 4px;"></span>
+              Mastodon
+            </a>
           </div>
         </div>
         
-        <div class="footer-group">
-          <div class="footer-title">协议</div>
+        <!-- 随机友链 -->
+        <div class="footer-group friends-line">
+          <div class="footer-title">
+            友链
+            <button
+              class="refresh-button"
+              title="刷新友链"
+              @click="refreshFeeds"
+            >
+              <span class="iconify" data-icon="ph:arrow-clockwise-bold" style="font-size: 1rem;"></span>
+            </button>
+          </div>
           <div class="footer-links">
-            <a class="footer-item" title="隐私协议" href="#" @click.prevent>隐私协议</a>
-            <a class="footer-item" title="版权协议" href="#" @click.prevent>版权协议</a>
+            <a
+              v-for="(f, i) in randomFeeds"
+              :key="i"
+              class="footer-item"
+              :title="f.text"
+              :href="f.url"
+              target="_blank"
+            >
+              <img :src="f.avatar" :alt="f.text" class="friend-avatar">
+              {{ f.text }}
+            </a>
+            <a class="footer-item" title="更多" href="https://home.zsxcoder.top/link" target="_blank">
+              更多…
+            </a>
           </div>
         </div>
       </div>
 
       <!-- 徽章 -->
-      <p id="ghbdages">
+      <!-- <p id="ghbdages">
         <a 
           class="github-badge" 
           target="_blank" 
           href="#" 
-          @click.prevent
           style="margin-inline:5px" 
           data-title="本站使用安知鱼主题" 
           title="本站使用安知鱼主题"
@@ -50,7 +88,6 @@
           class="github-badge" 
           target="_blank" 
           href="#" 
-          @click.prevent
           style="margin-inline:5px" 
           data-title="本站使用安知鱼主题" 
           title="本站使用安知鱼主题"
@@ -64,7 +101,6 @@
           class="github-badge" 
           target="_blank" 
           href="#" 
-          @click.prevent
           style="margin-inline:5px" 
           data-title="本站使用安知鱼主题" 
           title="本站使用安知鱼主题"
@@ -73,12 +109,11 @@
             src="https://img.shields.io/badge/zsr-Vite-blue?logo=vite&label=Build" 
             alt="本站使用安知鱼主题"
           >
-        </a>
-        <a 
+        </a> -->
+        <!-- <a 
           class="github-badge" 
           target="_blank" 
           href="#" 
-          @click.prevent
           style="margin-inline:5px" 
           data-title="本站使用安知鱼主题" 
           title="本站使用安知鱼主题"
@@ -87,12 +122,11 @@
             src="https://img.shields.io/badge/zsr-EdgeOne-blue?logo=icloud&label=CDN" 
             alt="本站使用安知鱼主题"
           >
-        </a>
-        <a 
+        </a> -->
+        <!-- <a 
           class="github-badge" 
           target="_blank" 
           href="#" 
-          @click.prevent
           style="margin-inline:5px" 
           data-title="本站使用安知鱼主题" 
           title="本站使用安知鱼主题"
@@ -101,8 +135,8 @@
             src="https://img.shields.io/badge/zsr-Github-181717?logo=github&label=Source" 
             alt="本站使用安知鱼主题"
           >
-        </a>
-      </p>
+        </a> -->
+      <!-- </p> -->
     </div>
 
     <!-- 底部栏 -->
@@ -112,7 +146,7 @@
           <div id="footer-bar-tips">
             <div class="copyright">
               &copy;2025 By 
-              <a class="footer-bar-link" href="#" title="星辰" target="_blank" @click.prevent>星辰</a>
+              <a class="footer-bar-link" href="#" title="钟神秀" target="_blank">钟神秀</a>
             </div>
           </div>
         </div>
@@ -120,23 +154,21 @@
           <a 
             class="footer-bar-link" 
             target="_blank" 
-            href="#" 
-            title="主题" 
-            @click.prevent
-          >主题</a>
-          <a 
+            href="https://github.com/zsxcoder/homepage" 
+            title="源码"
+          >源码</a>
+          <!-- <a 
             class="footer-bar-link" 
             target="_blank" 
             href="#" 
             title="项目"
-            @click.prevent
           >项目</a>
           <a 
             class="footer-bar-link" 
             target="_blank" 
             href="https://beian.miit.gov.cn/" 
             title="冀ICP备2025110107号-1"
-          >冀ICP备2025110107号-1</a>
+          >冀ICP备2025110107号-1</a> -->
         </div>
       </div>
     </div>
@@ -144,7 +176,38 @@
 </template>
 
 <script setup lang="ts">
-// 这里不需要额外的逻辑
+import { ref, onMounted } from 'vue'
+
+/* 随机友链 */
+const randomFeeds = ref<any[]>([])
+async function initializeRandomFeeds() {
+  try {
+    const r = await fetch('https://checking-link.mcyzsx.top/friends.json')
+    const data = await r.json()
+    
+    if (data.friends && Array.isArray(data.friends)) {
+      const allFriends = data.friends.map((f: any) => ({
+        text: f[0],
+        url: f[1],
+        avatar: f[2]
+      }))
+      randomFeeds.value = [...allFriends].sort(() => 0.5 - Math.random()).slice(0, 4)
+    }
+  }
+  catch (error) {
+    console.error('Failed to fetch friends:', error)
+  }
+}
+
+/* 刷新友链 */
+async function refreshFeeds() {
+  await initializeRandomFeeds()
+}
+
+/* 初始化 */
+onMounted(() => {
+  initializeRandomFeeds()
+})
 </script>
 
 <style scoped>
@@ -205,10 +268,72 @@
   padding: 2px 0;
   text-decoration: none;
   transition: .3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .footer-item:hover {
   color: var(--anzhiyu-main);
+}
+
+/* 刷新按钮 */
+.refresh-button {
+  padding: 0.16em;
+  border: none;
+  border-radius: 0.3em;
+  background: none;
+  color: var(--anzhiyu-secondtext);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.refresh-button:hover {
+  background-color: var(--anzhiyu-card-bg);
+  color: var(--anzhiyu-main);
+}
+
+/* 友链头像 */
+.friend-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* 友链行样式 */
+.friends-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-line .footer-title {
+  display: flex;
+  align-items: center;
+}
+
+.friends-line .footer-links {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.friends-line .footer-item {
+  max-width: none;
+  margin: 0;
+  padding: 0.3em 0.5em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+  background-color: var(--anzhiyu-card-bg-none);
+  transition: background-color 0.2s, color 0.1s;
+}
+
+.friends-line .footer-item:hover {
+  background-color: var(--anzhiyu-card-bg);
 }
 
 #ghbdages {

@@ -5,7 +5,7 @@
         <!-- 网站名称 -->
         <span id="blog_name">
           <a id="site-name" href="/" accesskey="h" @click.prevent>
-            <div class="title">星辰</div>
+            <div class="title">钟神秀</div>
             <i class="anzhiyufont anzhiyu-icon-house-chimney"></i>
           </a>
         </span>
@@ -54,7 +54,19 @@
 
         <!-- 右侧导航 -->
         <div id="nav-right">
-          <!-- 这里可以添加其他导航按钮 -->
+          <!-- 主题切换按钮 -->
+          <button 
+            class="nav-right-btn"
+            id="theme-toggle"
+            :title="isDark ? '切换到亮色模式' : '切换到深色模式'"
+            @click="toggleTheme"
+          >
+            <span
+              class="iconify"
+              :data-icon="isDark ? 'material-symbols:sunny' : 'material-symbols:dark-mode'"
+              style="font-size: 1.2rem;"
+            ></span>
+          </button>
         </div>
       </div>
     </nav>
@@ -62,9 +74,18 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useMenuData } from '../../composables/useData'
+import { useTheme } from '../../composables/useTheme'
 
 const { menuItems } = useMenuData()
+const { isDark, toggleTheme, initTheme, watchSystemTheme } = useTheme()
+
+// 组件挂载时初始化主题
+onMounted(() => {
+  initTheme()
+  watchSystemTheme()
+})
 </script>
 
 <style scoped>
@@ -252,6 +273,17 @@ const { menuItems } = useMenuData()
   margin-top: 8px;
 }
 
+/* 使用伪元素填补父元素与子菜单之间的间隙，防止鼠标移动时子菜单消失 */
+#menus .menus_item_child::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: transparent;
+}
+
 #menus .menus_item:hover .menus_item_child {
   opacity: 1;
   visibility: visible;
@@ -293,6 +325,30 @@ const { menuItems } = useMenuData()
 #nav-right {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 103;
+}
+
+/* 右侧导航按钮 */
+.nav-right-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--anzhiyu-fontcolor);
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-right-btn:hover {
+  color: var(--anzhiyu-main);
+  background: var(--anzhiyu-card-bg-op);
 }
 
 /* 移动端响应式 */

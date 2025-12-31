@@ -3,7 +3,7 @@
     <img 
       class="author-content-img no-lightbox" 
       alt="自拍" 
-      src="https://blog.strarry.top/static/map-light.png"
+      src="https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp"
     >
   </div>
 </template>

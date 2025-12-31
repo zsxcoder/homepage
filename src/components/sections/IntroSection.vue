@@ -15,12 +15,12 @@
       <div class="author-content-item aboutsiteTips">
         <div class="author-content-item-tips">追求</div>
         <h2>
-          源于<br>
-          热爱而去 <span class="inline-word">感受</span>
+          好用的 <span class="inline-word">博客</span><br>
+          白嫖的 <span class="inline-word">快乐</span>
           <div class="mask">
-            <span class="first-tips" data-show>体验</span>
-            <span>生活</span>
-            <span data-up>程序</span>
+            <span class="first-tips" data-show>Vue</span>
+            <span>Astro</span>
+            <span data-up>Nuxt</span>
           </div>
         </h2>
       </div>

@@ -1,11 +1,11 @@
 <template>
   <div class="author-content-item like-technology"
-       style="background:url(https://img02.anheyu.com/adminuploads/1/2022/09/24/632f0dd8f33c6.webp) top/cover no-repeat">
+       style="background:url(https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/image.1ovwqw278o.webp) top/cover no-repeat">
     <div class="card-content">
       <div class="author-content-item-tips">关注偏好</div>
-      <span class="author-content-item-title">数码科技</span>
+      <span class="author-content-item-title">博客写作</span>
       <div class="content-bottom">
-        <div class="tips">手机、电脑软硬件</div>
+        <div class="tips">资源分享</div>
       </div>
     </div>
   </div>

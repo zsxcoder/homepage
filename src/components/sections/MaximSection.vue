@@ -2,8 +2,8 @@
   <div class="author-content-item maxim">
     <div class="author-content-item-tips">座右铭</div>
     <span class="maxim-title">
-      <span style="opacity:.6;margin-bottom:8px">生活明朗，</span> 
-      <span>万物可爱。</span>
+      <span style="opacity:.6;margin-bottom:8px">每一段旅行，</span> 
+      <span>都有终点。</span>
     </span>
   </div>
 </template>
