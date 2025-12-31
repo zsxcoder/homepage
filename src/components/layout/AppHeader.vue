@@ -54,8 +54,22 @@
 
         <!-- 右侧导航 -->
         <div id="nav-right">
+          <!-- 粒子效果开关按钮 -->
+          <button
+            class="nav-right-btn"
+            id="particles-toggle"
+            :title="particlesEnabled ? '关闭粒子效果' : '开启粒子效果'"
+            @click="toggleParticles"
+          >
+            <span
+              class="iconify"
+              :data-icon="particlesEnabled ? 'material-symbols:stars' : 'material-symbols:stars-outline'"
+              style="font-size: 1.2rem;"
+            ></span>
+          </button>
+
           <!-- 主题切换按钮 -->
-          <button 
+          <button
             class="nav-right-btn"
             id="theme-toggle"
             :title="isDark ? '切换到亮色模式' : '切换到深色模式'"
@@ -77,9 +91,11 @@
 import { onMounted } from 'vue'
 import { useMenuData } from '../../composables/useData'
 import { useTheme } from '../../composables/useTheme'
+import { useParticles } from '../../composables/useParticles'
 
 const { menuItems } = useMenuData()
 const { isDark, toggleTheme, initTheme, watchSystemTheme } = useTheme()
+const { particlesEnabled, toggleParticles } = useParticles()
 
 // 组件挂载时初始化主题
 onMounted(() => {

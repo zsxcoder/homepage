@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <!-- 粒子背景效果 -->
+    <ParticlesBackground />
+
     <!-- 页头 -->
     <AppHeader />
 
@@ -59,6 +62,7 @@
 import { onMounted } from 'vue'
 import AppHeader from '../components/layout/AppHeader.vue'
 import AppFooter from '../components/layout/AppFooter.vue'
+import ParticlesBackground from '../components/layout/ParticlesBackground.vue'
 import AuthorSection from '../components/sections/AuthorSection.vue'
 import IntroSection from '../components/sections/IntroSection.vue'
 import HelloSection from '../components/sections/HelloSection.vue'
