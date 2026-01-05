@@ -27,7 +27,7 @@
               <span class="iconify" data-icon="material-symbols:mail" style="margin-right: 4px;"></span>
               电子邮件
             </a>
-        <a class="footer-item" title="Telegram" href="https://t.me/KemiaoJun" target="_blank">
+        <a class="footer-item" title="Telegram" href="https://t.me/zsxcoder_bot" target="_blank">
               <span class="iconify" data-icon="mdi:telegram" style="margin-right: 4px;"></span>
               Telegram
             </a>
