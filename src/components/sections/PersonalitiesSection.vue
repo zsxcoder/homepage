@@ -11,7 +11,7 @@
     <div class="image">
       <img 
         class="no-lightbox"
-        src="https://www.16personalities.com/static/images/personality-types/avatars/email/large/INFJ_male.png?v=1"
+        src="https://cdn.jsdmirror.com/gh/zsxcoder/picx-images-hosting@master/custom/INFJ_male.96a891ab9m.webp"
         onerror="this.onerror=null,this.src='https://bu.dusays.com/2023/03/03/6401a79030db5.png'"
         data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg"
         alt="人格"
