@@ -1,6 +1,6 @@
 <template>
   <div class="author-content-item like-music"
-       style="background:url(https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/61f1b9b3a1d2e284a22863d2a8adae1e.2h8s8mvbvb.webp) top/cover no-repeat">
+       style="background:url(https://cdn.jsdmirror.com/gh/zsxcoder/picx-images-hosting@master/custom/61f1b9b3a1d2e284a22863d2a8adae1e.2h8s8mvbvb.webp) top/cover no-repeat">
     <div class="card-content">
       <div class="author-content-item-tips">音乐偏好</div>
       <span class="author-content-item-title">国风、古风、二创</span>

@@ -296,7 +296,7 @@ onMounted(async () => {
 
 /* 深色主题的背景图 */
 [data-theme=dark] .author-content-item.map {
-  background-image: url(https://img02.anheyu.com/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg);
+  background-image: url(https://cdn.jsdmirror.com/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp);
 }
 
 .author-content-item.selfInfo {
