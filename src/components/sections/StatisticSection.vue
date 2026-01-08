@@ -253,7 +253,7 @@ onMounted(async () => {
 }
 
 .author-content-item.map {
-  background-image: url(https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp);
+  background-image: url(https://cdn.jsdmirror.com/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp);
   min-height: 160px;
   max-height: 400px;
   position: relative;

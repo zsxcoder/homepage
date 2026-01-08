@@ -3,7 +3,7 @@
     <img 
       class="author-content-img no-lightbox" 
       alt="自拍" 
-      src="https://cdn.statically.io/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp"
+      src="https://cdn.jsdmirror.com/gh/zsxcoder/picx-images-hosting@master/custom/map-nanjing.webp"
     >
   </div>
 </template>
